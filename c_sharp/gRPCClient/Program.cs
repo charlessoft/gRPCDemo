@@ -37,13 +37,14 @@ namespace gRPCClient
 //             Console.ReadKey();
         }
 
-        static async Task<> Mydemo1()
+        static async Task<int> Mydemo1()
         {
             var host = "192.168.3.7:9007";
             Channel channel = new Channel(host, ChannelCredentials.Insecure);
 
             //var client = new gRPC.gRPCClient(channel);
-            new GameService.LobbyReflection(channel);
+            //new GameService.LobbyReflection(channel);
+            return 1;
 
 
         }
