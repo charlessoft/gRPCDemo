@@ -21,7 +21,7 @@ namespace gRPCServer
             Server server = new Server
             {
                 Services = { gRPC.BindService(new gRPCImpl()) },
-                Ports = { new ServerPort("localhost", Port, ServerCredentials.Insecure) }
+                Ports = { new ServerPort("0.0.0.0", Port, ServerCredentials.Insecure) }
             };
             server.Start();
 
