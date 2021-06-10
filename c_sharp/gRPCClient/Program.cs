@@ -46,7 +46,6 @@ namespace gRPCClient
             //new GameService.LobbyReflection(channel);
             return 1;
 
-
         }
         static void Main(string[] args)
         {
